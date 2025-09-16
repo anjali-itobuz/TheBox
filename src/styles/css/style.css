@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgba(0, 26, 255, 0.168627451);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar .nav-left {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-left .logo {
+  width: 40px;
+  padding: 5px;
+}
+.navbar .nav-left .name {
+  color: #2947a9;
+  font-family: work sans;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+}
+.navbar .nav-left .name .name-box {
+  font-style: normal;
+  font-weight: bold;
+}
+.navbar .menu-toggle {
+  display: none;
+}
+.navbar .hamburger {
+  display: none;
+}
+.navbar .nav-right {
+  display: flex;
+  gap: 3rem;
+}
+.navbar .nav-right .links {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    padding: 10px;
+  }
+  .navbar .hamburger {
+    color: #2947a9;
+    font-size: 2rem;
+    display: block;
+    height: auto;
+    width: 30px;
+  }
+}
+
+.hero-section {
+  background-image: url("/TheBox/src/assets/images/Hero-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.hero-section .moto {
+  font-size: xx-large;
+  color: #292e3d;
+  font-family: work sans;
+  font-weight: 600;
+  margin: 30px;
+}
+
+.feature-section {
+  background-color: #2947a9;
+  display: flex;
+  flex-direction: column;
+}
+.feature-section .feature-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feature-section .feature-div .feature-head {
+  font-size: small;
+  font-family: work sans;
+  font-weight: 500;
+  color: #ffffff;
+  padding-top: 10px;
+}
+.feature-section .feature-div .feature-content {
+  font-size: medium;
+  font-family: work sans;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 10px;
+}
+.feature-section .feature-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.feature-section .feature-btn .next-btn,
+.feature-section .feature-btn .back-btn {
+  font-family: work sans;
+  background-color: #292e3d;
+  color: white;
+  width: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-section .feature-btn .next-btn .skip-btn,
+.feature-section .feature-btn .back-btn .skip-btn {
+  padding: 5px;
+}
+
+.reasons-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: white;
+}
+.reasons-section .reputation {
+  padding: 10px;
+  margin: 20px;
+  font-size: x-large;
+  font-family: work sans;
+  font-weight: 600;
+}
+.reasons-section .quality-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: center;
+}
+.reasons-section .quality-section .quality {
+  border: 1px solid #e0e3eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.reasons-section .quality-section .quality .image {
+  padding: 10px;
+}
+.reasons-section .quality-section .quality .quality-title {
+  font-family: work sans;
+  color: #3d445c;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+.reasons-section .quality-section .quality .quality-content {
+  font-family: work sans;
+  color: #3d445c;
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2947a9;
+}
+.about-section .about-img {
+  display: none;
+}
+.about-section .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  background-color: #2947a9;
+}
+.about-section .about-content .about-title {
+  margin: 10px;
+  padding: 15px;
+  text-align: start;
+  color: #ffffff;
+  font-family: work sans;
+  font-weight: 600;
+  font-size: large;
+  border: none;
+}
+.about-section .about-content .about-text {
+  margin: 10px;
+  padding: 15px;
+  text-align: start;
+  color: #ffffff;
+  font-family: work sans;
+  font-size: small;
+}
+.about-section .about-content .about-btn {
+  margin: 25px;
+  padding: 15px;
+  font-family: work sans;
+  border: none;
+  border-radius: 4px;
+  color: #2947a9;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f8f7;
+  padding: 15px;
+}
+.service-section .service-title {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  color: #292e3d;
+  font-family: work sans;
+  font-weight: 600;
+  font-size: x-large;
+}
+.service-section .service-card:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: 230px;
+  height: 120px;
+  background: #ffffff;
+  box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  border-radius: 4px;
+}
+.service-section .service-card:nth-child(even) .service-icon {
+  padding: 10px;
+  text-align: center;
+}
+.service-section .service-card:nth-child(even) .rectangle {
+  padding: 10px;
+  text-align: center;
+}
+.service-section .service-card:nth-child(even) .service-text {
+  padding: 10px;
+  text-align: center;
+  color: #2947a9;
+  font-family: work sans;
+  font-weight: 500;
+}
+.service-section .service-card:nth-child(odd) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  width: 230px;
+  height: 120px;
+  background: #2947a9;
+  box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  border-radius: 4px;
+}
+.service-section .service-card:nth-child(odd) .service-icon {
+  padding: 10px;
+  text-align: center;
+}
+.service-section .service-card:nth-child(odd) .rectangle {
+  padding: 10px;
+  text-align: center;
+}
+.service-section .service-card:nth-child(odd) .service-text {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-family: work sans;
+  font-weight: 500;
+}
+
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
